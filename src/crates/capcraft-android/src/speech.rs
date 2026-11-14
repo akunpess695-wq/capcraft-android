@@ -254,7 +254,7 @@ const WORDS_PER_CAPTION: usize = 6;
 
 /// A recognised phrase cut into captions of a few words each, the time
 /// shared out by how many letters each holds.
-fn chunks(from: f64, to: f64, text: &str) -> Vec<(f64, f64, String)> {
+pub(crate) fn chunks(from: f64, to: f64, text: &str) -> Vec<(f64, f64, String)> {
     let words: Vec<&str> = text.split_whitespace().collect();
     if words.len() <= WORDS_PER_CAPTION {
         return vec![(from, to, words.join(" "))];
