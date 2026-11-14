@@ -136,6 +136,7 @@ CapCraft for Android is in beta.
 | Sound effects, voiceover, extract audio, voice effects, noise reduction and isolate voice | ✅ |
 | Remove background (a model downloaded once, run on the phone) | ✅ |
 | Aspect ratios, backgrounds, cover, AutoCut, collage | ✅ |
+| Clipper: the best moments of a long talk, found on the phone and made into tall clips with captions | ✅ |
 | Export at 480p to 4K, 24 to 60 fps, GIF and photo, saved to the gallery and shared | ✅ |
 | A music library, downloadable effects and templates | ⬜ |
 | Generative AI, cloud storage, accounts | 🚫 CapCraft is a local app |
