@@ -276,6 +276,7 @@ private fun rootTools(vm: EditorViewModel): List<Tool> = listOfNotNull(
     },
     Tool("stickers", "Stickers", LucideIcons.Sticker) { vm.panel = Panel.Stickers },
     Tool("transcript", "Transcript", LucideIcons.FileText) { vm.panel = Panel.Transcript },
+    Tool("clipper", "Clipper", LucideIcons.Scissors) { vm.panel = Panel.Clipper },
     Tool("ratio", "Aspect ratio", LucideIcons.Square) { vm.panel = Panel.Ratio },
     Tool("background", "Background", MaterialIcons.Texture) { vm.dock = vm.dock + DockLevel.Group("background") },
 )

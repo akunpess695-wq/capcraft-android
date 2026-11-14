@@ -64,6 +64,8 @@ sealed interface Panel {
     data object Voiceover : Panel
     data object SoundFx : Panel
     data object Transcript : Panel
+    /** The clipper: the best moments of a long talk, each made into a project of its own. */
+    data object Clipper : Panel
     data object Draw : Panel
     data object Tracking : Panel
     data object Enhance : Panel
@@ -467,6 +469,7 @@ class EditorViewModel(app: Application, val path: String) : AndroidViewModel(app
             "extract" -> mainClipAtPlayhead()?.let { extractAudio(it) }
             "enhance" -> mainClipAtPlayhead()?.let { selected = it.id; panel = Panel.Quality }
             "transcript" -> panel = Panel.Transcript
+            "clipper" -> panel = Panel.Clipper
             "soundfx" -> panel = Panel.SoundFx
             "retouch" -> mainClipAtPlayhead()?.let { selected = it.id; panel = Panel.Retouch }
             // a photo to edit: the frame its own shape, and the export a picture
