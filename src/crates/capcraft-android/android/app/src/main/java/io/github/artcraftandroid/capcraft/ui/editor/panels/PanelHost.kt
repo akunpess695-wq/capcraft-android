@@ -105,6 +105,7 @@ fun PanelHost(vm: EditorViewModel) {
                 Panel.Voiceover -> VoiceoverPanel(vm)
                 Panel.SoundFx -> SoundFxPanel(vm)
                 Panel.Transcript -> TranscriptPanel(vm)
+                Panel.Clipper -> ClipperPanel(vm)
                 Panel.Draw -> DrawPanel(vm)
                 Panel.Tracking -> TrackingPanel(vm)
                 Panel.Enhance -> EnhancePanel(vm)
