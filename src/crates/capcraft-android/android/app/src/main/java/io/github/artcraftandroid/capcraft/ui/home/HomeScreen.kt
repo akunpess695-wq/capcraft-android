@@ -185,6 +185,7 @@ private class Shortcut(val id: String, val label: String, val icon: ImageVector,
  */
 private val SHORTCUTS = listOf(
     Shortcut("autocut", "AutoCut", LucideIcons.Clapperboard, videoOnly = false),
+    Shortcut("clipper", "Clipper", LucideIcons.Scissors),
     Shortcut("retouch", "Retouch", LucideIcons.Smile, videoOnly = false),
     Shortcut("phototools", "Photo tools", LucideIcons.Image, videoOnly = false),
     Shortcut("camera", "Shoot and record", LucideIcons.Camera),
